@@ -1,15 +1,15 @@
 
 var input_content = document.getElementById("operacion-numeros").value;
-
-function del(op){
-    switch(op){
-        case "del":
+// Uso del metodo para reconocer la tecla pulsada
+function pulsada(opcion){
+    switch(opcion){
+        case "del":// para eliminar todos los digitos 
 
             document.getElementById("operacion-numeros").value ='';
         
         break;
 
-        case "=":
+        case "=":// para obtener el resultado
 
             var resultado = eval(document.getElementById("operacion-numeros").value);
         
@@ -19,12 +19,12 @@ function del(op){
 
         default:
 
-            document.getElementById("operacion-numeros").value = document.getElementById("operacion-numeros").value + op;
+            document.getElementById("operacion-numeros").value = document.getElementById("operacion-numero").value + opcion;
         
         break;
     }
 }
-
+//funcion para borrar un digito
 function eliminar(){
 
     var anterior = document.getElementById('operacion-numeros').value;
@@ -82,5 +82,3 @@ function log(numero1){
     return resultado;
 
 }
-
-

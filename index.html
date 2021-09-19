@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!--funcion para agregar estilo a la pagina html-->
     <title>Calculadora Basica-Cientifica </title>
 </head>
 
@@ -15,9 +15,11 @@
         <div class="pantalla">
             <input type="text" class="texto-pantalla" name="numeros" id="operacion-numeros" >
         </div><br>
+
+        <!--calculadora cientifica-->
         <h3 class="titulo">Cientifica</h3>
         <div class="calculadoraCientifica">
-            <div class="btn-group">
+            <div class="btn-group"><!--Funcion bootstrap-->
                 <input type="button" value="(" class="boton-numero" onclick="numeros.value += '('">
                 <input type="button" value=")" class="boton-numero" onclick="numeros.value += ')'">
                 <input type="button" value="sin" class="boton-numero" onclick="numeros.value += 'sin('">
@@ -25,7 +27,7 @@
                 <input type="button" value="tan" class="boton-numero" onclick="numeros.value += 'tan('">
                 <input type="button" value="√" class="boton-numero" onclick="numeros.value += 'raiz('">
             </div>
-            <div class="btn-group"> <!--Funcion bootstrap-->
+            <div class="btn-group"> 
                 <input type="button" value="^" class="boton-numero" onclick="numeros.value += 'potencia('">
                 <input type="button" value="," class="boton-numero" onclick="numeros.value += ','">
                 <input type="button" value="%" class="boton-numero" onclick="numeros.value += 'porcentaje('">
@@ -33,7 +35,6 @@
                 <input type="button" value="log" class="boton-numero" onclick="numeros.value += 'log('">
                 <input type="button" value=" " class="boton-numero">
             </div>
-            
         </div>
         <br>
 
@@ -58,11 +59,13 @@
                 <input type="button" value="0" class="boton-numero" onclick="numeros.value += '0'">
                 <input type="button" value="." class="boton-numero" onclick="numeros.value += '.'">
             </div>
-    
+
+            <!--calculadora basica-->
             <div class="basico">
-              
+
+                
                 <div class="btn-group">
-                    <input type="button" value="DEL" class="boton-del" onclick="del('del')">
+                    <input type="button" value="DEL" class="boton-del" onclick="pulsada('del')">
                     <input type="button" value="AC" class="boton-ac" onclick="eliminar()">
                 </div>
 
@@ -71,14 +74,14 @@
                     <input type="button" value="+" class="boton-numero" onclick="numeros.value += '+'">
                     <input type="button" value="-" class="boton-numero" onclick="numeros.value += '-'">              
                 </div>
+
                 <div class="btn-group">
                     <input type="button" value="*" class="boton-numero" onclick="numeros.value += '*'">
                     <input type="button" value="/" class="boton-numero" onclick="numeros.value += '/'">
                     <input type="button" value="π" class="boton-numero" onclick="numeros.value += '3.141592'">
-
                 </div>
                 
-                <input type="button" value="=" class="boton-igual" onclick="del('=')">
+                <input type="button" value="=" class="boton-igual" onclick="pulsada('=')">
             </div>
         </div>
     </form>
@@ -87,7 +90,7 @@
             Datos del Alumno
         </button>
     </div>
-    
+    <!--ventana modal-->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
@@ -96,7 +99,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>Carné: <b>0909-20-6881</b><br>Nombre completo: <b>Maderlaine Vanessa Aldana Martínez</b><br>Fecha y hora de finalizacion: <b>19-09-2021 - 09:50 a.m.</b><br>Nota esperada segun rendimiento: <b>18 pts.</b></p>
+                <p>Carné: <b>0909-20-6881</b><br>Nombre completo: <b>Maderlaine Vanessa Aldana Martínez</b><br>Fecha y hora de finalizacion: <b>19-09-2021 - 10:35 a.m.</b><br>Nota esperada segun rendimiento: <b>19.5 pts.</b></p>
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -105,7 +108,7 @@
         </div>
     </div>
 
-    <script src="calculadora.js"></script>
+    <script src="calculadora.js"></script><!--conexion con Javascript-->
 
 </body>
 </html>
