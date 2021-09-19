@@ -1,8 +1,8 @@
 
 var input_content = document.getElementById("operacion-numeros").value;
 
-function pulsada(tecla){
-    switch(tecla){
+function del(op){
+    switch(op){
         case "del":
 
             document.getElementById("operacion-numeros").value ='';
@@ -19,7 +19,7 @@ function pulsada(tecla){
 
         default:
 
-            document.getElementById("operacion-numeros").value = document.getElementById("operacion-numero").value + tecla;
+            document.getElementById("operacion-numeros").value = document.getElementById("operacion-numeros").value + op;
         
         break;
     }
@@ -62,14 +62,14 @@ function raiz(numero1){
 
 }
 
-function potencia(numero1){
+function potencia(numero1,numero2){
 
-    resultado= Math.pow(numero1);
+    resultado= Math.pow(numero1,numero2);
     return resultado;
 
 }
 
-function prc(numero1,numero2){
+function porcentaje(numero1,numero2){
     
     resultado = ((numero1/100)*numero2);
     return resultado;
