@@ -1,0 +1,109 @@
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    padding: 20px;
+    margin: 0;
+}
+
+.calculadora{
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+    width: 35%;
+    height: 98%;
+    background-color: rgb(28, 31, 31);
+}
+
+.pantalla{
+    width: 100%;
+}
+
+.texto-pantalla{
+    background: rgb(62, 68, 68, 0);
+    color: rgb(255, 255, 255);
+    padding: .7em;
+    width: 95%;
+    height: 40px;
+    font-size: 1.2em;
+    text-align: left;
+    border: none;
+    outline: 0;
+    border-bottom: 2px solid rgb(255, 98, 182);
+}
+
+.calculadoraCientifica{
+    width: 95%;
+    height: 25%;
+}
+
+.titulo{
+    color: rgb(255, 246, 250);
+}
+
+.abajo{
+    display: flex;
+}
+
+.boton-numero{
+    padding: 5px;
+    color: rgb(255, 246, 250);
+    margin: 6px;
+    background: transparent;
+    border: 2px solid rgb(255, 98, 182);
+    border-radius: 70px;
+    width: 40px;
+    height: 40px;
+}
+.numero{
+    text-align: center;
+    margin: 10px;
+}
+
+.basico{
+    text-align: center;
+    margin: 10px;
+}
+
+.boton-del{
+    padding: 5px;
+    color: rgb(255, 246, 250);
+    background-color:rgb(248, 60, 154);
+    border: 2px solid rgb(255, 98, 182);
+    border-radius: 5px;
+    width: 90px;
+    height: 50px;
+    margin: 3px;
+}
+
+.boton-ac{
+    padding: 5px;
+    color: rgb(255, 246, 250);
+    background: transparent;
+    border: 2px solid rgb(255, 98, 182);
+    border-radius: 5px;
+    width: 90px;
+    height: 50px;
+    margin: 3px;
+}
+
+.boton-igual{
+    padding: 5px;
+    color: rgb(255, 246, 250);
+    background: transparent;
+    border: 2px solid rgb(255, 98, 182);
+    border-radius: 5px;
+    width: 180px;
+    height: 50px;
+    margin: 3px;
+}
+
+.boton-fila{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
